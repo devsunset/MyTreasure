@@ -1,0 +1,2 @@
+keytool -genkey -v -keystore devsunset.mykey -alias devsunsetapp -keyalg RSA -validity 10000
+

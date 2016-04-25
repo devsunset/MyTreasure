@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/contents_top_margin"
+        android:paddingLeft="@dimen/contents_horizontal_margin"
+        android:paddingRight="@dimen/contents_horizontal_margin"
+        android:paddingTop="@dimen/contents_top_margin" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/table_row_height"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/icon_arrow"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:text="@string/vaccinationreg"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btdelete"
+                android:layout_width="80dip"
+                android:layout_height="35dip"
+                android:background="@drawable/btn_selector_common_sub"
+                android:text="@string/btdelete"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btsave"
+                android:layout_width="80dip"
+                android:layout_height="35dip"
+                android:layout_marginLeft="3dip"
+                android:background="@drawable/btn_selector_common"
+                android:text="@string/btsave"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/common_table_line"
+            android:baselineAligned="false"
+            android:orientation="horizontal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/common_table_line"
+            android:orientation="vertical"
+            android:paddingBottom="2dp"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:gravity="center_vertical"
+                android:minHeight="@dimen/table_row_height"
+                android:orientation="horizontal"
+                android:weightSum="10" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="#f2f2f2"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="3" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/textbox_horizontal_margin"
+                        android:background="#f2f2f2"
+                        android:gravity="center"
+                        android:text="@string/vaccination_yes" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/common_must"
+                        android:textColor="@color/description_text" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/common_table_line"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/textbox_horizontal_margin"
+                    android:paddingRight="@dimen/textbox_horizontal_margin" >
+
+                    <RadioGroup
+                        android:id="@+id/rbVacc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="@dimen/textbox_horizontal_margin"
+                        android:gravity="left|center_vertical"
+                        android:orientation="horizontal" >
+
+                        <com.nics.mytreasure.util.FixedRadioButton
+                            android:id="@+id/rbyes"
+                            style="@style/textview_new"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/radio"
+                            android:checked="true"
+                            android:text="@string/vaccination_yes" />
+
+                        <LinearLayout
+                            android:layout_width="20dp"
+                            android:layout_height="wrap_content" />
+
+                        <com.nics.mytreasure.util.FixedRadioButton
+                            android:id="@+id/rbno"
+                            style="@style/textview_new"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/radio"
+                            android:text="@string/vaccination_no" />
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/common_table_line"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:weightSum="10" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:gravity="center_vertical"
+                android:minHeight="@dimen/table_row_height"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="#f2f2f2"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="3" >
+
+                    <TextView
+                        android:id="@+id/vacc_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/textbox_horizontal_margin"
+                        android:background="#f2f2f2"
+                        android:gravity="center"
+                        android:text="@string/vaccination_reg_day" />
+
+                    <TextView
+                        android:id="@+id/vacc_title_must"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/common_must"
+                        android:textColor="@color/description_text"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/common_table_line"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/textbox_horizontal_margin"
+                    android:paddingRight="@dimen/textbox_horizontal_margin" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="10" >
+
+                        <EditText
+                            android:id="@+id/etdayvaccin"
+                            style="@style/edittext_new"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/textbox_height"
+                            android:layout_weight="9"
+                            android:enabled="false"
+                            android:hint="@string/vaccination_reg_click"
+                            android:singleLine="true" />
+
+                        <Button
+                            android:id="@+id/btcal"
+                            android:layout_width="28dip"
+                            android:layout_height="35dip"
+                            android:layout_marginLeft="3dip"
+                            android:background="@drawable/btn_selector_calendar" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/common_table_line"
+                android:baselineAligned="false"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:gravity="center_vertical"
+                android:minHeight="@dimen/table_row_height"
+                android:orientation="horizontal"
+                android:weightSum="10" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="#f2f2f2"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="2" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="#f2f2f2"
+                        android:gravity="center"
+                        android:text="@string/memo" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/common_table_line"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/textbox_horizontal_margin"
+                    android:paddingRight="@dimen/textbox_horizontal_margin" >
+
+                    <EditText
+                        android:id="@+id/memo"
+                        style="@style/edittext_new"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dip"
+                        android:layout_marginTop="2dip"
+                        android:hint="@string/memo"
+                        android:minHeight="@dimen/textbox_height" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/common_table_line"
+                android:baselineAligned="false"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:gravity="center_vertical"
+                android:minHeight="@dimen/table_row_height"
+                android:orientation="horizontal"
+                android:weightSum="10" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="#f2f2f2"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="2" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="#f2f2f2"
+                        android:gravity="center"
+                        android:text="@string/vaccinationdesc" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/common_table_line"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/textbox_horizontal_margin"
+                    android:paddingRight="@dimen/textbox_horizontal_margin" >
+
+                    <EditText
+                        android:id="@+id/title"
+                        style="@style/edittext_new"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dip"
+                        android:layout_marginTop="2dip"
+                        android:enabled="false"
+                        android:minHeight="@dimen/textbox_height" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/common_table_line"
+                android:baselineAligned="false"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:gravity="center_vertical"
+                android:minHeight="@dimen/table_row_height"
+                android:orientation="horizontal"
+                android:weightSum="10" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="#f2f2f2"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="2" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="#f2f2f2"
+                        android:gravity="center"
+                        android:text="@string/help" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/common_table_line"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/textbox_horizontal_margin"
+                    android:paddingRight="@dimen/textbox_horizontal_margin" >
+
+                    <Button
+                        android:id="@+id/bthelpvc"
+                        android:layout_width="100dip"
+                        android:layout_height="35dip"
+                        android:background="@drawable/btn_selector_common_sub"
+                        android:text="@string/helpvacc"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

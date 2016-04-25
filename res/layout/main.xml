@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mytreasure"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="horizontal" >
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="10dip"
+            android:stretchColumns="*" >
+
+            <TableRow android:layout_weight="2" >
+
+                <Button
+                    android:id="@+id/ivmybaby"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dip"
+                    android:layout_margin="10dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_selector_main"
+                    android:text="@string/btnbaby"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/ivvaccination"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dip"
+                    android:layout_margin="10dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_selector_main"
+                    android:text="@string/btnvacc"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow android:layout_weight="2" >
+
+                <Button
+                    android:id="@+id/ivetcmenu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dip"
+                    android:layout_margin="10dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_selector_main"
+                    android:text="@string/btnetc"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/ivsetting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dip"
+                    android:layout_margin="10dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_selector_main"
+                    android:text="@string/btnsetting"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+</LinearLayout>

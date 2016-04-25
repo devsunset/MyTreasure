@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tab_height"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/ll_tab1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/tab_bg"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/lTab1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal"
+                android:paddingBottom="12dip" >
+
+                <ImageView
+                    android:id="@+id/iv_tab1"
+                    android:layout_width="15dip"
+                    android:layout_height="15dip"
+                    android:layout_marginRight="@dimen/tab_image_view_margin_right"
+                    android:src="@drawable/tab1_on" />
+
+                <TextView
+                    android:id="@+id/tv_tab1"
+                    style="@style/black_font_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/anniversary"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/v_line_tab1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/tab_line_height"
+                android:layout_below="@id/lTab1"
+                android:layout_marginRight="1px"
+                android:background="@color/tab_enable" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ll_tab2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/tab_bg"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/lTab2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal"
+                android:paddingBottom="12dip" >
+
+                <ImageView
+                    android:id="@+id/iv_tab2"
+                    android:layout_width="15dip"
+                    android:layout_height="15dip"
+                    android:layout_marginRight="@dimen/tab_image_view_margin_right"
+                    android:src="@drawable/tab2" />
+
+                <TextView
+                    android:id="@+id/tv_tab2"
+                    style="@style/black_font_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/obesity"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/v_line_tab2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/tab_line_height"
+                android:layout_below="@id/lTab2"
+                android:layout_marginRight="1px"
+                android:background="@color/tab_disable" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ll_tab3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/tab_bg"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/lTab3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal"
+                android:paddingBottom="12dip" >
+
+                <ImageView
+                    android:id="@+id/iv_tab3"
+                    android:layout_width="15dip"
+                    android:layout_height="15dip"
+                    android:layout_marginRight="@dimen/tab_image_view_margin_right"
+                    android:src="@drawable/tab3" />
+
+                <TextView
+                    android:id="@+id/tv_tab3"
+                    style="@style/black_font_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tall"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/v_line_tab3"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/tab_line_height"
+                android:layout_below="@id/lTab3"
+                android:layout_marginRight="1px"
+                android:background="@color/tab_disable" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ll_tab4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/tab_bg"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/lTab4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal"
+                android:paddingBottom="12dip" >
+
+                <ImageView
+                    android:id="@+id/iv_tab4"
+                    android:layout_width="15dip"
+                    android:layout_height="15dip"
+                    android:layout_marginRight="@dimen/tab_image_view_margin_right"
+                    android:src="@drawable/tab4" />
+
+                <TextView
+                    android:id="@+id/tv_tab4"
+                    style="@style/black_font_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pregnancyday"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/v_line_tab4"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/tab_line_height"
+                android:layout_below="@id/lTab4"
+                android:layout_marginRight="1px"
+                android:background="@color/tab_disable" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <com.nics.mytreasure.util.CustomViewPager
+        android:id="@+id/vp_etcmenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/contents_horizontal_margin"
+        android:paddingRight="@dimen/contents_horizontal_margin"
+        android:paddingTop="@dimen/contents_top_margin" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/table_row_height"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/icon_arrow"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:text="@string/mybabyreg"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btcancel"
+                android:layout_width="80dip"
+                android:layout_height="35dip"
+                android:background="@drawable/btn_selector_common_sub"
+                android:text="@string/common_cancel"
+                android:textColor="@color/white"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btsave"
+                android:layout_width="80dip"
+                android:layout_height="35dip"
+                android:layout_marginLeft="3dip"
+                android:background="@drawable/btn_selector_common"
+                android:text="@string/btsave"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/common_table_line"
+            android:baselineAligned="false"
+            android:orientation="horizontal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/common_table_line"
+            android:orientation="vertical"
+            android:paddingBottom="2dp"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:gravity="center_vertical"
+                android:minHeight="@dimen/table_row_height"
+                android:orientation="horizontal"
+                android:weightSum="10" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="#f2f2f2"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="3" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/textbox_horizontal_margin"
+                        android:background="#f2f2f2"
+                        android:gravity="center"
+                        android:text="@string/babyname" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/common_must"
+                        android:textColor="@color/description_text" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/common_table_line"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/textbox_horizontal_margin"
+                    android:paddingRight="@dimen/textbox_horizontal_margin" >
+
+                    <EditText
+                        android:id="@+id/etbabyname"
+                        style="@style/edittext_new"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/textbox_height"
+                        android:hint="@string/input_babyname"
+                        android:maxLength="20"
+                        android:singleLine="true" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/common_table_line"
+                android:baselineAligned="false"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:gravity="center_vertical"
+                android:minHeight="@dimen/table_row_height"
+                android:orientation="horizontal"
+                android:weightSum="10" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="#f2f2f2"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="3" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/textbox_horizontal_margin"
+                        android:background="#f2f2f2"
+                        android:gravity="center"
+                        android:text="@string/sex" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/common_must"
+                        android:textColor="@color/description_text" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/common_table_line"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/textbox_horizontal_margin"
+                    android:paddingRight="@dimen/textbox_horizontal_margin" >
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="@dimen/textbox_horizontal_margin"
+                        android:gravity="left|center_vertical"
+                        android:orientation="horizontal" >
+
+                        <com.nics.mytreasure.util.FixedRadioButton
+                            android:id="@+id/rbsexman"
+                            style="@style/textview_new"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/radio"
+                            android:checked="true"
+                            android:text="@string/man" />
+
+                        <LinearLayout
+                            android:layout_width="20dp"
+                            android:layout_height="wrap_content" />
+
+                        <com.nics.mytreasure.util.FixedRadioButton
+                            android:id="@+id/rbsexwoman"
+                            style="@style/textview_new"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/radio"
+                            android:text="@string/woman" />
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/common_table_line"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:weightSum="10" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:gravity="center_vertical"
+                android:minHeight="@dimen/table_row_height"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="#f2f2f2"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="3" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/textbox_horizontal_margin"
+                        android:background="#f2f2f2"
+                        android:gravity="center"
+                        android:text="@string/birthday" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/common_must"
+                        android:textColor="@color/description_text" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/common_table_line"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/textbox_horizontal_margin"
+                    android:paddingRight="@dimen/textbox_horizontal_margin" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="10" >
+
+                        <EditText
+                            android:id="@+id/etbirthday"
+                            style="@style/edittext_new"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/textbox_height"
+                            android:layout_weight="9"
+                            android:enabled="false"
+                            android:hint="@string/birthdayinput"
+                            android:singleLine="true" />
+
+                        <Button
+                            android:id="@+id/btcal"
+                            android:layout_width="28dip"
+                            android:layout_height="35dip"
+                            android:layout_marginLeft="3dip"
+                            android:background="@drawable/btn_selector_calendar" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/common_table_line"
+                android:baselineAligned="false"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:gravity="center_vertical"
+                android:minHeight="@dimen/table_row_height"
+                android:orientation="horizontal"
+                android:weightSum="10" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="#f2f2f2"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="3" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/textbox_horizontal_margin"
+                        android:background="#f2f2f2"
+                        android:gravity="center"
+                        android:text="@string/blood" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/common_must"
+                        android:textColor="@color/description_text" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/common_table_line"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/textbox_horizontal_margin"
+                    android:paddingRight="@dimen/textbox_horizontal_margin" >
+
+                    <Spinner
+                        android:id="@+id/spmenus_blood_name"
+                        style="@style/edittext_new"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/textbox_height"
+                        android:layout_gravity="center"
+                        android:background="@drawable/spinner"
+                        android:prompt="@string/bloodprompt" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

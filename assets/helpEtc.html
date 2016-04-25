@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+
+<title>도움말</title>
+
+<script type="text/javascript" src="cardview.js"></script>
+
+<script type="text/javascript">
+
+var deck;
+var data = [
+	{
+		img: 'imgs/1.png',
+		title: '1. 우리 아기',
+		text: '<b><br>아기 정보를 추가하시면 아기 생일 기준에 따른 기타 정보를 확인하실 수 있습니다.</b>'
+	},
+	{
+		img: 'imgs/2.png',
+		title: '2. 우리 아기 등록',
+		text: '<b><br>아기 정보를 추가 하실 수 있습니다.</b>'
+	},
+	{
+		img: 'imgs/5.png',
+		title: '3. 기념일',
+		text: '<b><br>상단 아기 정보를 선택하시면 아기의 기념일을 확인 하실 수 있습니다.</b>'
+	},
+	{
+		img: 'imgs/6.png',
+		title: '4. 비만도',
+		text: '<b><br>아기의 키와 몸무게로 간단히 아기 비만도를 체크해 보세요.</b>'
+	},
+	{
+		img: 'imgs/7.png',
+		title: '5. 신장 예측',
+		text: '<b><br>아빠 엄마 키로 아기의 키를 예측해 볼 수 있습니다. (소숫점 첫째짜리까지 입력 가능)</b>'
+	},
+	{
+		img: 'imgs/8.png',
+		title: '6. 임신 체크',
+		text: '<b><br>최근 생리일과 생리 주기를 입력하여 가임 기간을 확인해 보실 수 있습니다.</b>'
+	},
+	{
+		img: 'imgs/9.png',
+		title: '7. 환경 설정',
+		text: '<b><br>알림여부와 알림 일자를 설정하시면 아기 예방접종 일에 알림 기능을 제공합니다.</b>'
+	}
+];
+
+function loaded () {
+	deck = new CardView('#wrapper', {
+		dataset: data,
+		onUpdateContent: function (el, data) {
+			el.querySelector('img').src = data.img;
+			el.querySelector('h3').innerHTML = data.title;
+			el.querySelector('p').innerHTML = data.text;
+		}
+	});
+}
+
+document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+
+</script>
+
+<style>
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	
+}
+
+body, html {
+	height: 100%;
+
+
+}
+
+body, ul, li, h1, h2, h3, img, p {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	list-style: none;
+}
+
+body {
+	/* On modern browsers, prevent the whole page to bounce */
+	overflow: hidden;
+	font-size: 9px;
+	font-family:"맑은고딕", Malgun Gothic;
+}
+
+img {border:0 none; max-width:100%; max-height:100%; vertical-align:middle; text-align:center;}
+#wrapper {
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	max-width: 720px;
+	height: 100%;
+	max-height: 1280px;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	overflow: hidden;
+
+	/* Prevent native touch events on Windows */
+	-ms-touch-action: none;
+
+	/* Prevent the callout on tap-hold and text selection */
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+
+	/* Prevent elements to be highlighted on tap */
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+
+	/* Prevent text resize on orientation change, useful for web-apps */
+	-webkit-text-size-adjust: none;
+	-moz-text-size-adjust: none;
+	-ms-text-size-adjust: none;
+	-o-text-size-adjust: none;
+	text-size-adjust: none;
+}
+
+#deck {
+	position: relative;
+	z-index: 10;
+	width: 100%;
+	height: 100%;
+	
+}
+
+.card {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+	padding:10px;
+
+	/* Put the scroller into the HW Compositing layer right from the start */
+	-webkit-transform: translateZ(0);
+	-moz-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	-o-transform: translateZ(0);
+	transform: translateZ(0);
+}
+
+.card div {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	border: 2px solid #ff7800;
+	padding: 20px;
+	border-radius: 10px;
+	background: #fff;
+	background-position: 50% 50%;
+	background-size: 95% 95%;
+	background-repeat: no-repeat;
+	font-size: 1.6em;
+}
+
+.card img {
+	float: left;
+	margin: 0 10px 10px 0;
+	
+}
+
+.card h3 {
+	padding-top:10px;
+	color:#333;
+	line-height:0.5em;
+	
+}
+.card h4 {
+	background-color:#ff7800;
+	height:4px;
+	
+}
+
+.card p{
+	line-height:1.em;
+	float:left;
+}
+.red{color:#F00;}
+</style>
+
+</head>
+<body onload="loaded()">
+
+<div id="wrapper">
+	<ul id="deck">
+		<li class="card"><div>
+			<h3>Title</h3>
+            	<h4></h4>
+			<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAADElEQVQI12P4//8/AAX+Av7czFnn
+AAAAAElFTkSuQmCC">
+			<p>Text</p>
+		</div></li>
+		<li class="card"><div>
+			<h3>Title</h3>
+            <h4></h4>
+			<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAADElEQVQI12P4//8/AAX+Av7czFnn
+AAAAAElFTkSuQmCC">
+			<p>Text</p>
+		</div></li>
+		<li class="card"><div>
+			<h3>Title</h3>
+            <h4></h4>
+			<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAADElEQVQI12P4//8/AAX+Av7czFnn
+AAAAAElFTkSuQmCC">
+			<p>Text</p>
+		</div></li>
+		<li class="card"><div>
+			<h3>Title</h3>
+            <h4></h4>
+			<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAADElEQVQI12P4//8/AAX+Av7czFnn
+AAAAAElFTkSuQmCC">
+			<p>Text</p>
+		</div></li>
+		<li class="card"><div>
+			<h3>Title</h3>
+            <h4></h4>
+			<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAADElEQVQI12P4//8/AAX+Av7czFnn
+AAAAAElFTkSuQmCC">
+			<p>Text</p>
+		</div></li>
+		<li class="card"><div>
+			<h3>Title</h3>
+            <h4></h4>
+			<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAADElEQVQI12P4//8/AAX+Av7czFnn
+AAAAAElFTkSuQmCC">
+			<p>Text</p>
+		</div></li>
+		<li class="card"><div>
+			<h3>Title</h3>
+            <h4></h4>
+			<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAADElEQVQI12P4//8/AAX+Av7czFnn
+AAAAAElFTkSuQmCC">
+			<p>Text</p>
+		</div></li>
+	</ul>
+</div>
+
+</body>
+</html>

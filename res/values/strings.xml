@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, MyTreasure!</string>
+    <string name="app_name">My Treasure</string>
+
+    <!-- ========================================== -->
+    <!-- MAIN -->
+    <!-- ========================================== -->
+    <string name="btnvacc">예방 접종</string>
+    <string name="btnbaby">우리 아기</string>
+    <string name="btnetc">부가 기능</string>
+    <string name="btnsetting">환경 설정</string>
+    <string name="mybaby">우리 아기</string>
+    <string name="mybabyreg">우리 아기 등록</string>
+    <string name="etcmenu">부가 기능</string>
+    <string name="vaccination">아기 예방 접종 관리</string>
+    <string name="vaccinationreg">접종 관리</string>
+    <string name="obesity">비만도</string>
+    <string name="pregnancyday">임신 체크</string>
+    <string name="tall">신장 예측</string>
+    <string name="anniversary">기념일</string>
+    <string name="setting">환경 설정</string>
+    <string name="help">도움말</string>
+    <string name="helpvacc">접종</string>
+    <string name="helpetc">기타</string>
+
+    <!-- ========================================== -->
+    <!-- COMMON -->
+    <!-- ========================================== -->
+    <string name="btenter">확인</string>
+    <string name="btclose">닫기</string>
+    <string name="notice">알림</string>
+    <string name="btadd">추가</string>
+    <string name="btsave">저장</string>
+    <string name="btdelete">삭제</string>
+    <string name="cm">cm</string>
+    <string name="kg">kg</string>
+    <string name="man">남자</string>
+    <string name="woman">여자</string>
+    <string name="save_success">정상적으로 처리 되었습니다.</string>
+    <string name="save_fail">처리중 오류가 발생하였습니다.</string>
+    <string name="save_confirm">저장 하시겠습니까 ?</string>
+    <string name="delete_confirm">삭제 하시겠습니까 ?</string>
+    <string name="yes">예</string>
+    <string name="no">아니오</string>
+    <string name="delete_success">정상적으로 처리되었습니다.</string>
+    <string name="delete_fail">처리중 오류가 발생하였습니다.</string>
+    <string name="babynotfound">등록된 아기가 없습니다</string>
+    <string name="babybirthperiod">태어난지 </string>
+    <string name="day">일</string>
+    <string name="common_info_title">알림</string>
+    <string name="common_yes">예</string>
+    <string name="common_no">아니오</string>
+    <string name="common_ok">확인</string>
+    <string name="common_cancel">취소</string>
+    <string name="common_close">닫기</string>
+    <string name="common_selection">선택</string>
+    <string name="common_total">전체</string>
+    <string name="common_edit">수정</string>
+    <string name="common_delete">삭제</string>
+    <string name="common_save">저장</string>
+    <string name="common_wait_please">잠시만 기다려주십시오.</string>
+    <string name="common_must">*</string>
+    <string name="birthdayinput">생일 입력</string>
+    <string name="btexcute">실행</string>
+    <string name="btinit">초기화</string>
+    <string name="babyprompt">아기 선택</string>
+    <string name="desc">설명</string>
+    <string name="main_back_finish">\'뒤로\' 버튼을 한번 더 누르시면 종료됩니다 </string>
+
+    <!-- ========================================== -->
+    <!-- Baby -->
+    <!-- ========================================== -->
+    <string name="babyname">이름</string>
+    <string name="input_babyname">이름 입력</string>
+    <string name="sex">성별</string>
+    <string name="birthday">생일</string>
+    <string name="birthday_click">CLICK</string>
+    <string name="blood">혈액형</string>
+    <string name="constellation">별자리</string>
+    <string name="birthstones">탄생석</string>
+    <string name="agetitle">띠</string>
+    <string name="agealarm">아기가 태어난지 0일</string>
+    <string name="bloodprompt">혈액형 선택</string>
+    <string name="inputbabyname_text">아기 이름을 입력해 주세요</string>
+    <string name="inputbirthday_text">아기 생일을 입력해 주세요</string>
+    <string name="delete_title">아기 정보 삭제</string>
+    <string name="delete_no_baby">삭제할 데이타가 없습니다</string>
+
+    <!-- ========================================== -->
+    <!-- Vaccination -->
+    <!-- ========================================== -->
+    <string name="vaccination_name">접종명</string>
+    <string name="vaccination_gubun">접종 분류</string>
+    <string name="vaccination_period">접종 기간</string>
+    <string name="vaccination_status">접종 상태</string>
+    <string name="vaccinationdesc">설명</string>
+    <string name="vaccination_yes">접종</string>
+    <string name="vaccination_no">미접종</string>
+    <string name="vaccination_day">접종일</string>
+    <string name="vaccination_reg_day">예약일</string>
+    <string name="memo">메모</string>
+    <string name="vaccination_reg_click">예약 일자 입력</string>
+    <string name="vaccination_click">접종 일자 입력</string>
+    <string name="vaccination_text">접종 일자를 입력해 주세요</string>
+
+    <!-- ========================================== -->
+    <!-- Anniversary -->
+    <!-- ========================================== -->
+    <string name="anniversarydesc1">태어난지</string>
+    <string name="anniversarydesc2">일</string>
+
+    <!-- ========================================== -->
+    <!-- Obesity -->
+    <!-- ========================================== -->
+    <string name="babytall">아기 키</string>
+    <string name="inputtall">키 입력</string>
+    <string name="babyweight">몸무게</string>
+    <string name="inputweight">몸무게 입력</string>
+    <string name="inputtall_text">아기 키를 입력해 주세요</string>
+    <string name="inputweight_text">아기 몸무게를 입력해 주세요</string>
+    <string name="obesityrate">비만 수치</string>
+    <string name="obesityresultprompt">비만도 범례</string>
+
+    <!-- ========================================== -->
+    <!-- Tall -->
+    <!-- ========================================== -->
+    <string name="fathertall">아빠 키</string>
+    <string name="inputfathertall">아빠 키 입력</string>
+    <string name="mothertall">엄마 키</string>
+    <string name="inputmothertall">엄마 키  입력</string>
+    <string name="babysex">아기 성별 </string>
+    <string name="predicttall">예상 키</string>
+    <string name="inputfathertall_text">아빠 키를 입력해 주세요</string>
+    <string name="inputmothertall_text">엄마 키를 입력해 주세요</string>
+    <string name="predicttall_text">※ 부모 키를 기준으로 한 예상 키이며\n  성장 과정에 따라 다를 수 있습니다.</string>
+
+    <!-- ========================================== -->
+    <!-- PregancyDay -->
+    <!-- ========================================== -->
+    <string name="recentstartday">최근 생리일 입력</string>
+    <string name="pregancyday">생리일</string>
+    <string name="cycle">생리 주기</string>
+    <string name="ovulationday">배란일</string>
+    <string name="pregday">가임 기간</string>
+    <string name="startday">시작일</string>
+    <string name="endday">종료일</string>
+    <string name="periodprompt">생리 주기 선택</string>
+    <string name="pregancyday_text">※ 임신 가능 예상 기간 이며 전 후로\n 몇일 간의 차이가 있을 수 있습니다.</string>
+
+    <!-- ========================================== -->
+    <!-- Setting -->
+    <!-- ========================================== -->
+    <string name="smsfunction">SMS 기능</string>
+    <string name="phonenumber">전화번호</string>
+    <string name="alarmprompt">알림 일자 선택</string>
+    <string name="alarmfunction">알림 기능</string>
+    <string name="use">사용</string>
+    <string name="nouse">미사용</string>
+    <string name="alarmday">알림일</string>
+
+    <!-- ========================================== -->
+    <!-- Alarm -->
+    <!-- ========================================== -->
+    <string name="vaccin_info_confirmation">아기의 예방 접종일이 다가 옵니다 .</string>
+    <string name="vaccin_info">예방 접종일 알림</string>
+
+</resources>

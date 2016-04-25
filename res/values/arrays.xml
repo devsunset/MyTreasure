@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <!-- ========================================== -->
+    <!-- Baby -->
+    <!-- ========================================== -->
+    <string-array name="menus_baby_array">
+        <item>A형</item>
+        <item>B형</item>
+        <item>O형</item>
+        <item>AB형</item>
+    </string-array>
+
+    <!-- ========================================== -->
+    <!-- Obesity -->
+    <!-- ========================================== -->
+    <string-array name="menus_obesity_result_array">
+        <item>비만도 범례</item>
+        <item>13 미만 영양실조</item>
+        <item>13~15 말랐어요</item>
+        <item>15~18 정상</item>
+        <item>18~20 우량</item>
+        <item>20~22 비만</item>
+        <item>22 이상 명확한 비만</item>
+    </string-array>
+
+    <!-- ========================================== -->
+    <!-- PregnancyDay -->
+    <!-- ========================================== -->
+    <string-array name="menus_period_array">
+        <item>25일</item>
+        <item>26일</item>
+        <item>27일</item>
+        <item>28일</item>
+        <item>29일</item>
+        <item>30일</item>
+        <item>31일</item>
+        <item>32일</item>
+        <item>33일</item>
+        <item>34일</item>
+        <item>35일</item>
+    </string-array>
+
+    <!-- ========================================== -->
+    <!-- Alarm -->
+    <!-- ========================================== -->
+    <string-array name="menus_alarm_array">
+        <item>접종일</item>
+        <item>1일전</item>
+        <item>2일전</item>
+        <item>3일전</item>
+        <item>4일전</item>
+        <item>5일전</item>
+        <item>6일전</item>
+        <item>7일전</item>
+        <item>8일전</item>
+        <item>9일전</item>
+        <item>10일전</item>
+        <item>11일전</item>
+        <item>12일전</item>
+        <item>13일전</item>
+        <item>14일전</item>
+        <item>15일전</item>
+    </string-array>
+
+</resources>
